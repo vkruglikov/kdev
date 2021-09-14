@@ -73,21 +73,70 @@ h1 {
 
 
 .projects {
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px 0;
+    max-width: 768px;
+}
+
+.project {
     display: flex;
 }
 
+.project:last-child .project__content {
+    border-bottom: none;
+}
+
+.project__content {
+    padding: 10px;
+    line-height: 21px;
+    font-size: 14px;
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+}
+
+
 .project__logo {
-    padding: 4px;
+    padding: 10px;
     box-sizing: border-box;
-    height: 46px;
+    /*height: 46px;*/
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    min-width: 95px;
+    justify-content: center;
 }
 
 .project__logo > * {
-    height: 100%;
+    width: 70px;
+    height: auto;
 }
 
 .project__logo_vkpay > * {
-    height: 24px;
+    height: 28px;
+}
+
+.project__logo_hh > * {
+    height: 44px;
+}
+
+.project-content-icon {
+    width: 60px;
+    margin-top: 10px;
+}
+
+.project__position {
+    color: #313131;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.until-now {
+    font-size: 12px;
+    float: right;
+    background: #ec892e;
+    color: #fff;
+    padding: 0px 4px;
+    border-radius: 7px;
 }
